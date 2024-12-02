@@ -155,53 +155,55 @@
         default_layer {
             label = "DEFAULT";
             bindings = <
-&lt 2 TAB     &kp Q  &kp W           &kp E         &kp R         &kp T  &kp Y          &kp U     &kp I      &kp O      &kp P     &lt 2 MINUS
-&kp CAPSLOCK  &kp A  &kp S           &kp D         &kp F         &kp G  &kp H          &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
-&kp LSHFT     &kp Z  &kp X           &kp C         &kp V         &kp B  &kp N          &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
-&kp LGUI     &kp LEFT_ALT          &kp BSLH   &kp GRAVE         &mt LCTRL ENTER     &mo 1        &kp BACKSPACE   &kp SPACE      &kp LBKT   &kp RBKT  &mo 2 &lt 3 DOWN
-                             
+     &kp Q  &kp W           &kp E         &kp R         &kp T  &kp Y          &kp U     &kp I      &kp O      &kp P     
+     &kp A  &kp S           &kp D         &kp F         &kp G  &kp H          &kp J     &kp K      &kp L      &kp SEMI 
+     &kp Z  &kp X           &kp C         &kp V         &kp B  &kp N          &kp M     &kp COMMA  &kp DOT    &kp FSLH  
+         &lt 2 BSLH   &kp GRAVE                                               &kp LBKT   &kp RBKT  
+     &kp LGUI     &kp LEFT_ALT   &mt LCTRL ENTER     &mo 1         &kp BACKSPACE   &kp SPACE   &mo 2 &lt 3 DOWN      
             >;
         };
 
         number_layer {
             label = "NUMBER";
             bindings = <
-&kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
-&none         &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp PLUS
-&kp LSHFT     &none      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none     &kp KP_DOT
-&none   &none         &none   &kp N0  &kp KP_DOT  &none   &none              &kp F1   &kp F2   &kp F3   &none   &none
-                            
+        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   
+         &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    
+     &none      &kp C_VOL_DN  &kp C_VOL_UP   &none       &none       &none   &none    &none    &none     &none    
+&none   &none            &none              &kp F1   
+               &none   &kp N0  &kp KP_DOT  &none         &kp F2   &kp F3   &none   &none    
             >;
         };
 
         fn_layer {
             label = "FN";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
-&sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB  &out OUT_USB  &none         &none         &none         &none         &sys_reset
-&none         &none         &kp F4   &kp F5   &kp F6   &out OUT_BLE  &out OUT_BLE  &none         &none         &none         &none         &none
-&none        &none        &kp F1   &kp F2   &kp F3    &none    &none        &none         &none         &none       &none    &none
-                           
+  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_CLR
+    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB  &out OUT_USB  &none         &none         &none         &none        
+        &none         &kp F4   &kp F5   &kp F6   &out OUT_BLE  &out OUT_BLE  &none         &none         &none         &none         
+&none        &none            &none        &none        
+                      &kp F1   &kp F2   &kp F3    &none      &none         &none       &none    &none
             >;
         };
 
         hotkey_layer {
             label = "HOTKEY";
             bindings = <
-&none  &macro_email_q  &GUANJIANCI  &kp UP    &none      &none  &none  &none     &kp UP    &none      &none  &none
-&none  &none           &kp LEFT     &kp DOWN  &kp RIGHT  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&none  &none           &none        &none     &none      &none  &none  &none     &none     &none      &none  &none
-&none  &none           &none        &none     &none      &none  &none  &none     &none     &none      &none  &none
+  &macro_email_q  &GUANJIANCI  &kp UP    &none      &none  &none  &none     &kp UP    &none      &none  
+  &none           &kp LEFT     &kp DOWN  &kp RIGHT  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  
+  &none           &none        &none     &none      &none  &none  &none     &none     &none      &none  
+&none  &none             &none  &none     
+&none        &none     &none      &none   &none     &none      &none  &none
             >;
         };
 
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
-&none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none
-&none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none
-&none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none
+  &kp EXCL  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  
+      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none    
+      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     
+&none      &none          &none      &none     
+ &none   &none      &none     &none   &none     &none     &none     &none
             >;
         };
     };
