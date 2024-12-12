@@ -41,6 +41,20 @@
 				;
 	};
 
+	left_encoder: encoder_left {
+        compatible = "alps,ec11";
+		a-gpios = <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+		b-gpios = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <80>;
+        status = "disabled";
+    };
+
+	sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder>;
+        triggers-per-rotation = <20>;
+    };
+
 openwork36: openwork36 {
 		compatible = "zmk,physical-layout";
 		display-name = "matrix layout";

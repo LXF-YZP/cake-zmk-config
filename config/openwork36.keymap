@@ -161,6 +161,7 @@
 &kp LGUI     &kp LEFT_ALT          &kp BSLH   &kp GRAVE         &mt LCTRL ENTER     &mo 1        &kp BACKSPACE   &kp SPACE      &kp LBKT   &kp RBKT  &mo 2 &lt 3 DOWN
                              
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         number_layer {
@@ -172,6 +173,7 @@
 &none   &none         &none   &kp N0  &kp KP_DOT  &none   &none              &kp F1   &kp F2   &kp F3   &none   &none
                             
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         fn_layer {
@@ -183,6 +185,7 @@
 &none        &none        &kp F1   &kp F2   &kp F3    &none    &none        &none         &none         &none       &none    &none
                            
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         hotkey_layer {
@@ -193,6 +196,7 @@
 &none  &none           &none        &none     &none      &none  &none  &none     &none     &none      &none  &none
 &none  &none           &none        &none     &none      &none  &none  &none     &none     &none      &none  &none
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         symbol_layer {
@@ -203,6 +207,7 @@
 &none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none
 &none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
