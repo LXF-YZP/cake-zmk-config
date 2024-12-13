@@ -2,9 +2,9 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      - name: LXF-YZP
+    - name: LXF-YZP
       url-base: https://github.com/LXF-YZP
-      - name: caksoylar
+    - name: caksoylar
       url-base: https://github.com/caksoylar
       
   projects:
