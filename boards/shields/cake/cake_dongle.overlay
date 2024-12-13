@@ -5,7 +5,7 @@
       zmk,kscan = &mock_kscan;
    };
 
-   mock_kscan: kscan_1 {
+   mock_kscan: kscan_0 {
       compatible = "zmk,kscan-mock";
       columns = <0>;
       rows = <0>;
