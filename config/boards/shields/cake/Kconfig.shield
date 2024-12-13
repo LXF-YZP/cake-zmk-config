@@ -1,0 +1,9 @@
+config SHIELD_CAKE_DONGLE
+    def_bool $(shields_list_contains,cake_dongle)
+
+config SHIELD_CAKE_LEFT
+    def_bool $(shields_list_contains,cake_left)
+
+config SHIELD_CAKE_RIGHT
+    def_bool $(shields_list_contains,cake_right)
+

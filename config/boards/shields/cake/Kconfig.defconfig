@@ -1,0 +1,19 @@
+if SHIELD_CAKE_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "cake36"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+endif
+
+if SHIELD_CAKE_DONGLE || SHIELD_CAKE_LEFT || SHIELD_CAKE_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

@@ -154,6 +154,7 @@
 
         default_layer {
             label = "DEFAULT";
+            display-name = "Base";
             bindings = <
 &lt 2 TAB     &kp Q  &kp W           &kp E         &kp R         &kp T  &kp Y          &kp U     &kp I      &kp O      &kp P     &lt 2 MINUS
 &kp CAPSLOCK  &kp A  &kp S           &kp D         &kp F         &kp G  &kp H          &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
@@ -165,6 +166,7 @@
 
         number_layer {
             label = "NUMBER";
+            display-name = "Number";
             bindings = <
 &kp F1        &kp F2         &kp F3        &kp F4         &kp F5      &kp F6      &kp F7  &kp F8   &kp F9   &kp F10   &kp F11   &kp F12
 &none         &kp N1         &kp N2        &kp N3         &kp N4      &kp N5      &kp N6  &kp N7   &kp N8   &kp N9    &kp N0    &kp PLUS
@@ -176,6 +178,7 @@
 
         fn_layer {
             label = "FN";
+            display-name = "Fn";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &kp F10  &kp F11  &kp F12  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
 &sys_reset    &none         &kp F7   &kp F8   &kp F9   &out OUT_USB  &out OUT_USB  &none         &none         &none         &none         &sys_reset
@@ -187,6 +190,7 @@
 
         hotkey_layer {
             label = "HOTKEY";
+            display-name = "Hotkey";
             bindings = <
 &none  &macro_email_q  &GUANJIANCI  &kp UP    &none      &none  &none  &none     &kp UP    &none      &none  &none
 &none  &none           &kp LEFT     &kp DOWN  &kp RIGHT  &none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
@@ -197,6 +201,7 @@
 
         symbol_layer {
             label = "SYMBOL";
+            display-name = "Symbol";
             bindings = <
 &kp TILDE  &kp EXCL  &kp AT  &kp POUND  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &none
 &none      &none     &none   &none      &none     &none      &none      &none     &none     &none     &none     &none

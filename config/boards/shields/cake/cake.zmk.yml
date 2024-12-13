@@ -1,11 +1,12 @@
 file_format: "1"
-id: openwork36
-name: openwork36
+id: cake
+name: cake
 type: shield
 url: https://github.com/jimmerricks/swoop
 requires: [pro_micro]
 features:
   - keys
+  -studio
 siblings:
-  - openwork36_left
-  - openwork36_right
+  - cake_left
+  - cake_right
