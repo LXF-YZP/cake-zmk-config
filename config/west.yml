@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: LXF-YZP
       url-base: https://github.com/LXF-YZP
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
       
   projects:
     - name: zmk
@@ -14,9 +12,6 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module
       remote: LXF-YZP
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
       revision: main
   self:
     path: config
