@@ -160,7 +160,7 @@
 &kp CAPSLOCK  &kp A  &kp S           &kp D         &kp F         &kp G  &kp H          &kp J     &kp K      &kp L      &kp SEMI  &kp SQT
 &kp LSHFT     &kp Z  &kp X           &kp C         &kp V         &kp B  &kp N          &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
 &kp LGUI     &kp LEFT_ALT          &kp BSLH   &kp GRAVE         &mt LCTRL ENTER     &mo 1        &kp BACKSPACE   &kp SPACE      &kp LBKT   &kp RBKT  &mo 2 &lt 3 DOWN
-                             
+                            
             >;
         };
 
