@@ -1,9 +1,0 @@
-# Copyright (c) 2022 Duccio Breschi
-# SPDX-License-Identifier: MIT
-
-config SHIELD_OPENWORK36_LEFT
-    def_bool $(shields_list_contains,openwork36_left)
-
-config SHIELD_OPENWORK36_RIGHT
-    def_bool $(shields_list_contains,openwork36_right)
-
