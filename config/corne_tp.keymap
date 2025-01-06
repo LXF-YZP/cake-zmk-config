@@ -63,83 +63,77 @@ combos {
 
         combo_lbrc {
             timeout-ms = <50>;
-            key-positions = <4 5>; // KP: VB
+            key-positions = <16 17>; // KP: VB
             bindings = <&mt RBRC LBRC>; // }{
             layers = <0 1 2 3 4 5>;
         };
 
         combo_rbrc {
             timeout-ms = <50>;
-            key-positions = <6 7>; // KP: NM
+            key-positions = <18 19>; // KP: NM
             bindings = <&kp RBRC>; // }
             layers = <0 1 2 3 4 5>;
         };
 
         combo_lpar {
             timeout-ms = <50>;
-            key-positions = <16 17>; // KP: FG
+            key-positions = <28 29>; // KP: FG
             bindings = <&mt RPAR LPAR>; // )(
             layers = <0 1 2 3 4 5>;
         };
 
         combo_rpar {
             timeout-ms = <50>;
-            key-positions = <18 19>; // KP: HJ
+            key-positions = <30 31>; // KP: HJ
             bindings = <&kp RPAR>; // )
             layers = <0 1 2 3 4 5>;
         };
 
         combo_lbkt {
             timeout-ms = <50>;
-            key-positions = <28 29>; // KP: RT
+            key-positions = <40 41>; // KP: RT
             bindings = <&mt RBKT LBKT>; // ][ // 可以用CMD+这个单手返回到代码上一个编辑的地方 或者网页返回
             layers = <0 1 2 3 4 5>;
         };
 
         combo_rbkt {
             timeout-ms = <50>;
-            key-positions = <30 31>; // KP: YU
+            key-positions = <42 43>; // KP: YU
             bindings = <&kp RBKT>; // ]
             layers = <0 1 2 3 4 5>;
         };
 
-        esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>; // ESC
-            layers = <0>;
-        };
 
         up {
             bindings = <&kp UP>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <27 28>;
+            key-positions = <39 40>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         left {
             bindings = <&kp LEFT>;
-            key-positions = <14 15>;
+            key-positions = <26 27>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <15 16>;
+            key-positions = <27 28>;
             layers = <0>;
             timeout-ms = <50>;
         };
         reset_bootloader {
             bindings = <&bootloader>;
-            key-positions = <24 35>;
+            key-positions = <36 37>;
             layers = <0>;
             timeout-ms = <50>;
         };
@@ -148,27 +142,27 @@ combos {
 
         rup {
             bindings = <&kp UP>;
-            key-positions = <7 8>;
+            key-positions = <19 20>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
 
         rdown {
             bindings = <&kp DOWN>;
-            key-positions = <31 32>;
+            key-positions = <43 44>;
             timeout-ms = <50>;
         };
 
         rleft {
             bindings = <&kp LEFT>;
-            key-positions = <19 20>;
+            key-positions = <31 32>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
 
         rright {
             bindings = <&kp RIGHT>;
-            key-positions = <20 21>;
+            key-positions = <32 33>;
             layers = <0 1>;
             timeout-ms = <50>;
         };
