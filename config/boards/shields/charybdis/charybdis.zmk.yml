@@ -1,11 +1,11 @@
 file_format: "1"
-id: openwork36
-name: openwork36
+id: charybdis
+name: Charybdis
 type: shield
 url: https://github.com/jimmerricks/swoop
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - openwork36_left
-  - openwork36_right
+  - charybdis_left
+  - charybdis_right

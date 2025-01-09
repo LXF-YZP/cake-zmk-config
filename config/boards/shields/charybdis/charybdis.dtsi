@@ -7,18 +7,17 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
+
 / {
 	chosen {
-
 		zmk,kscan = &kscan0;
-	
-		zmk,physical-layout = &openwork;
+		zmk,physical-layout = &charybdis;
 	};
 
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
 		columns = <12>;
-		rows = <5>;
+		rows = <4>;
 
 		map = <
                  RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5)  RC(0,6) RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11)
@@ -35,16 +34,17 @@
 		label = "KSCAN";
 
 		diode-direction = "col2row";
-		       row-gpios
+		       row-gpios=  
                        = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                        , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                        , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                        , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                        , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+				        
 				;
 	};
 
-        openwork: openwork {
+	charybdis: charybdis {
 		compatible = "zmk,physical-layout";
 		display-name = "matrix layout";
 	 kscan = <&kscan0>;
@@ -111,4 +111,3 @@
     };
 
 };
-

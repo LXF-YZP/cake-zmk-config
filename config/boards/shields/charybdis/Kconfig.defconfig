@@ -1,17 +1,17 @@
 # Copyright (c) 2022 Duccio Breschi
 # SPDX-License-Identifier: MIT
 
-if SHIELD_OPENWORK36_LEFT
+if SHIELD_CHARYBDIS_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "kafka46"
+    default "Charybdis"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_OPENWORK36_LEFT || SHIELD_OPENWORK36_RIGHT
+if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
 config ZMK_SPLIT
     default y

@@ -1,1 +1,3 @@
-Bluetooth split keyboard
+# zmk-hatsumini
+
+

@@ -1,0 +1,9 @@
+# Copyright (c) 2022 Duccio Breschi
+# SPDX-License-Identifier: MIT
+
+config SHIELD_CHARYBDIS_LEFT
+    def_bool $(shields_list_contains,charybdis_left)
+
+config SHIELD_CHARYBDIS_RIGHT
+    def_bool $(shields_list_contains,charybdis_right)
+
