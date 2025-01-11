@@ -159,7 +159,7 @@
      &kp A  &kp S           &kp D         &kp F         &kp G  &kp H          &kp J     &kp K      &kp L      &kp SEMI 
      &kp Z  &kp X           &kp C         &kp V         &kp B  &kp N          &kp M     &kp COMMA  &kp DOT    &kp FSLH  
          &lt 2 BSLH   &kp GRAVE                                               &kp LBKT   &kp RBKT  
-           &kp LGUI     &kp LEFT_ALT   &mt LCTRL ENTER     &mo 1            &mo 2 &lt 3 DOWN    &kp BACKSPACE   &kp SPACE  
+             &mt LCTRL ENTER     &mo 1  &kp LEFT_ALT      &kp LGUI        &mo 2 &lt 3 DOWN    &kp BACKSPACE   &kp SPACE  
             >;
         };
 
