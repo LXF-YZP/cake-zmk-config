@@ -21,3 +21,47 @@
         , <&pro_micro 4 (GPIO_ACTIVE_HIGH)> // COL5
     ;
 };
+
+&pinctrl {
+	spi0_default: spi0_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+			<NRF_PSEL(SPIM_MOSI, 0, 11)>,
+			<NRF_PSEL(SPIM_MISO, 1, 4)>;
+		};
+	};
+	
+	spi0_sleep: spi0_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 8)>,
+			<NRF_PSEL(SPIM_MOSI, 0, 11)>,
+			<NRF_PSEL(SPIM_MISO, 1, 4)>;
+			low-power-enable;
+		};
+	};
+};
+
+&pro_micro_spi {
+	status = "okay";
+	compatible = "nordic,nrf-spim";
+	pinctrl-0 = <&spi0_default>;
+	pinctrl-1 = <&spi0_sleep>;
+	pinctrl-names = "default", "sleep";
+	cs-gpios = <&pro_micro 9 GPIO_ACTIVE_LOW>;
+	
+	glidepoint: glidepoint@0 {
+		status = "okay";
+		compatible = "cirque,pinnacle";
+		reg = <0>;
+		spi-max-frequency = <1000000>;
+		dr-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH)>;
+		
+		sensitivity = "4x";
+		sleep;
+		no-taps;
+	};
+};
+
+&glidepoint_split {
+	device = <&glidepoint>;
+};

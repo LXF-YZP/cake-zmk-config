@@ -6,6 +6,8 @@ url: https://github.com/jimmerricks/swoop
 requires: [pro_micro]
 features:
   - keys
+  - studio
+  - pointer
 siblings:
   - charybdis_left
   - charybdis_right

@@ -17,3 +17,7 @@
         , <&pro_micro 4 (GPIO_ACTIVE_HIGH)> // COL5
     ;
 };
+
+&glidepoint_listener {
+    status = "okay";
+};
