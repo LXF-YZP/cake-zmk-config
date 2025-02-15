@@ -44,6 +44,7 @@
 				;
 	};
 
+
 	charybdis: charybdis {
 		compatible = "zmk,physical-layout";
 		display-name = "matrix layout";
@@ -108,6 +109,16 @@
             , <&key_physical_attrs 100 100 1050  410       0     0     0>
             , <&key_physical_attrs 100 100 1150  410       0     0     0>
             ;
+    };
+
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        glidepoint_split: glidepoint_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
     };
 
     glidepoint_listener: glidepoint_listener {
