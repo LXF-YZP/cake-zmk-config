@@ -1,12 +1,13 @@
 file_format: "1"
-id: openwork36
-name: openwork36
+id: openwork
+name: openwork
 type: shield
 url: https://github.com/jimmerricks/swoop
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
   - pointer
 siblings:
-  - openwork36_left
-  - openwork36_right
+  - chary_left
+  - chary_right

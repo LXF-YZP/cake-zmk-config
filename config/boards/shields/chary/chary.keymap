@@ -4,4 +4,4 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "../../../openwork36.keymap"
+#include "../../../chary.keymap"

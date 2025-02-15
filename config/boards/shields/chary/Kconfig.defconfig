@@ -1,17 +1,17 @@
 # Copyright (c) 2022 Duccio Breschi
 # SPDX-License-Identifier: MIT
 
-if SHIELD_OPENWORK36_LEFT
+if SHIELD_CHARY_RIGHT
 
 config ZMK_KEYBOARD_NAME
-    default "kafka36"
+    default "Chary"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_OPENWORK36_LEFT || SHIELD_OPENWORK36_RIGHT
+if SHIELD_CHARY_LEFT || SHIELD_CHARY_RIGHT
 
 config ZMK_SPLIT
     default y

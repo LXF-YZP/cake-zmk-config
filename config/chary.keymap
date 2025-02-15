@@ -1,0 +1,141 @@
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/mouse.h>
+
+#define DEFAULT 0
+#define NUMBER  1
+#define SYMBOL  2
+#define HOTKEY  3
+
+#define AS(keycode) &as LS(keycode) keycode
+
+/ {
+    
+
+    macros {
+        macro_email_q: macro_email_q {
+            // 714448168@qq.com
+
+            label = "MACRO_EMAIL_QQ";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7 &kp N1 &kp N4 &kp N4 &kp N4 &kp N8 &kp N1 &kp N6 &kp N8 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
+        };
+
+        GUANJIANCI: GUANJIANCI {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        lup {
+            bindings = <&kp UP>;
+            key-positions = <15 16>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        ldown {
+            bindings = <&kp DOWN>;
+            key-positions = <39 40>;
+            timeout-ms = <50>;
+        };
+
+        lleft {
+            bindings = <&kp LEFT>;
+            key-positions = <26 27>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        lright {
+            bindings = <&kp RIGHT>;
+            key-positions = <27 28>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        rup {
+            bindings = <&kp UP>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        rdown {
+            bindings = <&kp DOWN>;
+            key-positions = <43 44>;
+            timeout-ms = <50>;
+        };
+
+        rleft {
+            bindings = <&kp LEFT>;
+            key-positions = <31 32>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+
+        rright {
+            bindings = <&kp RIGHT>;
+            key-positions = <32 33>;
+            layers = <0 1>;
+            timeout-ms = <50>;
+        };
+    };
+
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            label = "DEFAULT";
+            bindings = <
+&lt 1 ESC     &kp N1  &kp N2         &kp N3        &kp N4     &kp N5           &kp N6         &kp N7     &kp N8     &kp N9     &kp N0    &lt 1 MINUS
+&lt 2 TAB     &kp Q   &kp W          &kp E         &kp R      &kp T            &kp Y          &kp U      &kp I      &kp O      &kp P     &lt 2 EQUAL
+&kp CAPSLOCK  &kp A   &kp S          &kp D         &kp F      &kp G            &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
+&kp LSHFT     &kp Z   &kp X          &kp C         &kp V      &kp B            &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&kp LGUI     &kp LEFT_ALT          &kp BSLH   &kp GRAVE         &mt LCTRL ENTER     &mo 1        &kp BACKSPACE   &kp SPACE      &kp LBKT   &kp RBKT  &mo 2   &lt 3 DOWN
+            >;
+        };
+
+        number_layer {
+            label = "NUMBER";
+            bindings = <
+&kp F12  &kp F1  &kp F2    &kp F3    &kp F4     &kp F5  &kp F6  &kp F7     &kp F8     &kp F9      &kp F10      &kp F11
+&kp C_VOL_DN  &kp C_VOL_UP   &none     &kp UP    &none      &none   &none   &kp KP_N7  &kp KP_N8  &kp KP_N9   &kp KP_PLUS  &none
+&none    &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none   &none   &kp KP_N4  &kp KP_N5  &kp KP_N6   &none        &none
+&macro_email_q  &GUANJIANCI   &macro_email_q     &none     &none      &none   &none   &kp KP_N1  &kp KP_N2  &kp KP_N3   &none        &none
+                 &none     &none     &none      &none   &none   &none      &none      &none &none   &none      &none      &none
+            >;
+        };
+
+        symbol_layer {
+            label = "SYMBOL";
+            bindings = <
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&sys_reset    &none         &none         &none         &none         &out OUT_USB  &out OUT_USB  &none         &none         &none         &none         &sys_reset
+&none         &none         &none         &none         &none         &out OUT_BLE  &out OUT_BLE  &none         &none         &none         &none         &none
+&none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &none
+                            &none         &none         &none         &none         &none         &none         &none         &none  &none   &none      &none      &none
+            >;
+        };
+
+        hotkey_layer {
+            label = "HOTKEY";
+            bindings = <
+&none  &none           &kp F10  &kp F11  &kp F12  &none  &none  &none  &none  &none  &none  &none
+&none  &macro_email_q  &kp F7   &kp F8   &kp F9   &none  &none  &none  &none  &none  &none  &none
+&none  &none           &kp F4   &kp F5   &kp F6   &none  &none  &none  &none  &none  &none  &none
+&none  &none           &kp F1   &kp F2   &kp F3   &none  &none  &none  &none  &none  &none  &none
+                       &none    &none    &none    &none  &none  &none  &none  &none  &none   &none      &none      &none
+            >;
+        };
+    };
+};

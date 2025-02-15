@@ -1,0 +1,9 @@
+# Copyright (c) 2022 Duccio Breschi
+# SPDX-License-Identifier: MIT
+
+config SHIELD_CHARY_LEFT
+    def_bool $(shields_list_contains,chary_left)
+
+config SHIELD_CHARY_RIGHT
+    def_bool $(shields_list_contains,chary_right)
+
