@@ -4,7 +4,7 @@
 config SPI
     default y
     
-if SHIELD_CHARYBDIS_RIGHT
+if SHIELD_CHARYBDIS_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Charybdis"
