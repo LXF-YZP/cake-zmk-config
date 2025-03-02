@@ -55,8 +55,8 @@
 		reg = <0>;
 		spi-max-frequency = <1000000>;
 		dr-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH)>;
-		tap-enabled;          // 启用点击
-        scroll-enabled;       // 启用滚动
+		//tap-enabled;          // 启用点击
+        //scroll-enabled;       // 启用滚动
 		x-invert;
 		sensitivity = "2x";
 		sleep;
