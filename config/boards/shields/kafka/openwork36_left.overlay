@@ -5,6 +5,9 @@
  */
 
 #include "openwork36.dtsi"
+&default_transform {
+    col-offset = <6>;
+};
 
 &kscan0 {
     diode-direction = "col2row";
@@ -15,5 +18,6 @@
         , <&pro_micro 6 (GPIO_ACTIVE_HIGH)> // COL3
 	    , <&pro_micro 5 (GPIO_ACTIVE_HIGH)> // COL4
         , <&pro_micro 4 (GPIO_ACTIVE_HIGH)> // COL5
+        , <&pro_micro 10(GPIO_ACTIVE_HIGH)> // COL5
     ;
 };
