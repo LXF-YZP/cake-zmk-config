@@ -5,9 +5,7 @@
  */
 
 #include "openwork36.dtsi"
-&default_transform {
-    col-offset = <1>;
-};
+
 
 &kscan0 {
     diode-direction = "col2row";
