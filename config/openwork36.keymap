@@ -22,10 +22,10 @@
             label = "DEFAULT";
             bindings = <
                  &kp UP                       &kp Y    
-    &kp LEFT    &kp SPACE    &kp RIGHT        &kp H     
+            &kp RIGHT        &kp H     
                  &kp DOWN                     &kp N    
-                                              &kp SPACE      
-                                                                                                                                   
+                  &kp LEFT                     &kp SPACE      
+                  &kp SPACE                                                                                                           
             >;
         };
 
