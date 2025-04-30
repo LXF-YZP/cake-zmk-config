@@ -29,6 +29,7 @@ manifest:
       remote: infused-kim
       revision: pr-testing/mouse_ps2_module_base
       import: app/west.yml
+      
 
     # pete's zmk fork with the most up to date mouse PR, which is more
     # up-to-date, but may contain incompatibilities with the PS/2 mouse & TP
